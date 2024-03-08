@@ -1,15 +1,7 @@
 
 
 
-const req = new XMLHttpRequest();
-//req.addEventListener("load", reqListener);
-req.open("GET", "https://restcountries.com/v3.1/all");
-req.send();
-req.onload = function () {
-  console.log(this.response);
-};
-sr = 7;
-console.log(sr);
+
 
 // This is day 3 class practice.
 
@@ -55,3 +47,45 @@ console.log(values);
 function reqListener() {
   console.log(this.responseText);
 }
+
+const req = new XMLHttpRequest();
+//req.addEventListener("load", reqListener);
+req.open("GET", "https://restcountries.com/v3.1/all");
+req.send();
+req.onload = function () {
+  console.log(this.response);
+};
+
+
+
+//// Day 4 Class
+      
+// functions
+
+// 1. Named Function:
+
+// ex
+function reactancle(leanth, width) {
+  return leanth * width;
+}
+console.log(reactancle(3, 5));
+
+// 2. Anonymous Function:
+
+//ex
+const reactancle = function (leanth, width) {
+  return(leanth - width)
+}
+
+console.log(reactancle(3, 5))
+
+// 3. Arrow Function:
+const ancle1 = (leanth, width) => (leanth % width);
+
+console.log(ancle1(3, 5));
+
+// 4. IIFE Functions
+//ex
+(function (leanth, width) { console.log("iife", (leanth * width)) })(3, 5)
+
+// 5. 
