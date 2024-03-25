@@ -52,3 +52,5 @@ console.log(ancle1(20, 5));
   console.log("iife", leanth * width);
 })(3, 5);
 
+const address = (name, age) => ({ name: name, age: age });
+console.log(address("mani", 44));
