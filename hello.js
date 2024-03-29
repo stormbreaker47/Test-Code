@@ -84,14 +84,14 @@ console.log(address("mani", 44));
 
 /// day 5 ( ES5 vs ES6 )
 
-// spread operators  (...)
+// spread operators  (...) spread operator is inside of array of all values is come out to print the values
 // ex
 
 let arr = [1, 2, 3, 4, 6, 7, 9];
 
 console.log(...arr);
 
-// rest operators (...)
+// rest operators (...) rest operator is inside of array values of balance to get add to print in single array
 
 function sr(name, length, values) {
   console.log(name, length, values)
