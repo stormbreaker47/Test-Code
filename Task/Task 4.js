@@ -1,3 +1,8 @@
+
+
+
+
+
 class Movie {
   constructor(title = "goat", studio = "7star", rating = "PG") {
     this.title = title;
