@@ -1,24 +1,23 @@
+class UberPriceCalculator {
+  constructor(basePrice, costPerKiloMeter, surgePrice) {
+    this.basePrice = basePrice;
+    this.costPerKiloMeter = costPerKiloMeter; // Assigning the parameter value to the class property
+    this.surgePrice = surgePrice; // Assigning the parameter value to the class property
+  }
 
-
-let str = "   Hello   ";
-let trimmedStr = str.trim();
-console.log(trimmedStr)
-
-let numbers = [1, 2, 3];
-numbers.forEach(function (number) {
-  console.log(number);
-});
-
-const add = function (num1, num2) {
-    return num1 * num2;
+  calculateTotalPrice(distance) {
+    const totalPrice =
+      this.basePrice + this.costPerKiloMeter * distance * this.surgePrice;
+    return totalPrice;
+  }
 }
 
-console.log(typeof add);
+// Creating an instance of UberPriceCalculator
+const uberCalculator = new UberPriceCalculator(2, 1.4, 4);
 
-function find(num1, num2) {
-    return num1 + num2;
+// Calculating total price for a distance of 10 kilometers
+const totalPrice = uberCalculator.calculateTotalPrice(10);
+console.log(totalPrice); // Output will be: 58
 
-}
 
-console.log(add(6, 6))
-console.log(find(6, 6))
+
