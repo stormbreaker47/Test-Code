@@ -12,3 +12,5 @@ req.send();
 function reqListener() {
   console.log(JSON.parse(this.responseText));
 }
+const asianCountries = data.filter((country) => country.region === "Asia");
+console.log(asianCountries);
