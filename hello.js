@@ -97,7 +97,7 @@ function sr(name, length, values) {
   console.log(name, length, values)
 }
 
-sr(sathish, 4, 1, 2, 3, 10)
+sr('sathish', 4, 1, 2, 3, 10)
 
 
 
@@ -293,11 +293,11 @@ console.log(oddValues);
 
 // 3. Reduce method
 
-// Ex. (i)
+// Ex. (i) how to find sum of array value
 
 let arr = [11,22,33,44,55,66,77,88,99,10]
 
-const result = arr.reduce((accum, value, index, array) => accum * value)
+const result = arr.reduce((accum, value, index, array) => accum + value)
 console.log(result)
 
 // how to find a maximum value
@@ -314,6 +314,8 @@ const result = arr.reduce((accum, value) => {
 })
     
 console.log(result);
+
+
 
 // how to find minimum value
 // Ex. 2

@@ -1,4 +1,29 @@
 
+function sr(name, length, values) {
+  console.log(name, length, values);
+}
+
+sr('sathish', 4, 1, 2, 3, 10);
+
+
+// let arr3 = [1, 2, 3, 4, 5, 6, 7, 8];
+// let evenOrOdd1 = (num) => {
+//   if (num % 2 === 0) {
+//     return { evenOrOdd: "even", value: num };
+//   } else {
+//     return { evenOrOdd: "odd", value: num };
+//   }
+// };
+
+// const result3 = arr3.filter(evenOrOdd1);
+// console.log(result3)
+
+// console.log(result3.filter((item) => item.evenOrOdd === "odd"));
+// console.log(result3.filter((item) => item.evenOrOdd === "even"));
+// console.log(...arr3.filter((item) => item % 2 === 0));
+// console.log(...arr3.filter((item) => item % 2 === 1));
+
+
 
 
 // let num = 10;
@@ -23,19 +48,22 @@
 // });
 // console.log(...result);
 
-// let arr2 = [23, 44, 55, 66, 78, 89, 53, 40]
+// let arr6 = "124".split("").map(Number);
 
-// let newArr = arr2.map(function(value){
-//   let odd = "odd";
-//   let even = "even";
-//   if (value % 2 == 0) {
-//     return value +  odd;
-//   } else {
-//     return value +  even;
-//   }
-// });
+// const sum1 = arr6.reduce((accum, value) => accum + value, 0);
 
-// console.log(newArr);
+// console.log(sum1);
+
+// let arr = [11, 22, 33, 44, 55, 66, 77, 88, 99, 10];
+
+// const rs = arr.reduce((accum, curr) => {
+//   console.log(accum, curr);
+//   return accum % curr;
+// }, 2,3,5);
+
+
+
+
 // function reactancle(leanth, width) {
 //   return leanth * width;
 // }
@@ -77,23 +105,23 @@
 // const result = arr.reduce((accum, value, index, array) => accum * value)
 // console.log(result)
 
-let arr1 = [11, 22, 33, 44, 55, 66, 77, 88, 99, 10];
-const result1 = arr1.reduce(
-  (accum, value) => {
-    if (accum.max < value) {
-      accum.max = value;
-    }
-    if (accum.min > value) {
-      accum.min = value;
-    }
-    return accum;
-  },
-  {
-    max: arr1[0],
-    min: arr1[0],
-  }
-);
-console.log(result1);
+// let arr1 = [11, 22, 33, 44, 55, 66, 77, 88, 99, 10];
+// const result1 = arr1.reduce(
+//   (accum, value) => {
+//     if (accum.max < value) {
+//       accum.max = value;
+//     }
+//     if (accum.min > value) {
+//       accum.min = value;
+//     }
+//     return accum;
+//   },
+//   {
+//     max: arr1[0],
+//     min: arr1[0],
+//   }
+// );
+// console.log(result1);
 
 // let arr = [23, 5, 7, 8, 93, 56, 7]
 // function add(value1, value2) {
@@ -121,17 +149,17 @@ console.log(result1);
 // console.log(mapResult.filter((item) => item.oddOrEven === "odd"));
 // console.log(mapResult.filter((item)=> item.oddOrEven === "even"));
 
-let arr = [
-  1, 1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 2, 3, 4, 5, 6, 7, 8, 2, 3, 4, 5, 7, 8,
-];
+// let arr = [
+//   1, 1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 2, 3, 4, 5, 6, 7, 8, 2, 3, 4, 5, 7, 8,
+// ];
 
-const obj = arr.reduce((acc, curr) => {
-  if (acc[curr] == undefined) {
-    acc[curr] = 1;
-  } else {
-    acc[curr] += 1;
-  }
-    return acc;
-}, {});
+// const obj = arr.reduce((acc, curr) => {
+//   if (acc[curr] == undefined) {
+//     acc[curr] = 1;
+//   } else {
+//     acc[curr] += 1;
+//   }
+//   return acc;
+// }, {});
 
-console.log(obj);
+// console.log(obj);

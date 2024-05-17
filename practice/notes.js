@@ -1,4 +1,4 @@
-
+ 
 
 
 // codekatta
@@ -17,6 +17,7 @@ else{console.log("this is add number", num)}
 
 let num1 = 34
 let num2 = 4
+// let num = num1 + num2
 console.log(num1 + num2)
 if (num + num1 > num1) { console.log("positive") }
 else { console.log("negative") }
