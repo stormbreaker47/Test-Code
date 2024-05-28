@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./.css/Task3.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Form Submission</h2><br>
+        <form id="dataForm">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for=email">Email</label>
+                <input type="text" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" required>
+            </div>
+            <div class="form-group">
+                <label for="pincode">Pincode</label>
+                <input type="text" class="form-control" id="pincode" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label> <br>
+                <input type="radio" name="gender" value="Male" id="male" required> Male<br>
+                <input type="radio" name="gender" value="Female" id="female" required> Female<br>
+            </div>
+            <div class="form-group">
+                <label for="food">Choice of Food (Choose at least 2):</label><br>
+                <input type="checkbox" value="Pizza" id="food1">Pizza <br>
+                <input type="checkbox" value="salad" id="food2">Salad <br>
+                <input type="checkbox" value="noodles" id="food3">Noodles <br>
+                <input type="checkbox" value="non" id="food4">Non <br>
+                <input type="checkbox" value="biriyani" id="food5">Biriyani <br>
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" class="form-control" id="state" required>
+            </div>
+            <div class="form-group">
+                <label for="country">country</label>
+                <input type="text" class="form-control" id="country" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        <hr>
+        <h2>Submitted Data</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
+                    <th>Gender</th>
+                    <th>Food</th>
+                    <th>State</th>
+                    <th>country</th>
+                </tr>
+            </thead>
+            <tbody id="dataTable">
+
+            </tbody>
+        </table>
+    </div>
+           
+    <script src="script 3.js"></script>
+</body>
+</html>
