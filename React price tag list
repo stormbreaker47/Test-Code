@@ -1,3 +1,93 @@
+// App.jsx
+
+import React from "react";
+
+import Price from "./concepts/square";
+
+
+function App() {
+  const data = [
+    {
+      title: "Basic",
+      money: "10$/ Month",
+      color: "lightgreen",
+      features: [
+        {
+          value: "name 1",
+          isAvailable: true,
+        },
+        { value: "name 2", isAvailable: false },
+        { value: "name 3", isAvailable: true },
+        { value: "name 4", isAvailable: true },
+      ],
+    },
+    {
+      title: "Pro",
+      money: "10$/ Month",
+      color: "lightgreen",
+      features: [
+        {
+          value: "name 1",
+          isAvailable: true,
+        },
+        { value: "name 2", isAvailable: false },
+        { value: "name 3", isAvailable: true },
+        { value: "name 4", isAvailable: true },
+      ],
+    },
+    {
+      title: "Platinam",
+      money: "10$/ Month",
+      color: "lightgreen",
+      features: [
+        {
+          value: "name 1",
+          isAvailable: true,
+        },
+        { value: "name 2", isAvailable: false },
+        { value: "name 3", isAvailable: true },
+        { value: "name 4", isAvailable: true },
+      ],
+    },
+  ];
+
+  
+return (
+  <div
+    style={{
+      display: "flex",
+      justifyContent: "center",
+      gap: "20px",
+      flexWrap: "wrap",
+      position: "relative",
+      right:"-50%"
+    }}
+  >
+    {data.map((element, index) => (
+      <Price
+        key={[index]}
+        width={200}
+        height={340}
+        background={element.color}
+        message={element.title}
+        items={element.features}
+        money={element.money}
+      />
+    ))}
+  </div>
+);
+
+}
+
+
+
+export default App;
+
+
+
+
+// this is square jsx code..
+
 
 import PropTypes from "prop-types"
 
