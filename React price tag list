@@ -1,0 +1,58 @@
+
+import PropTypes from "prop-types"
+
+export default function Price (props ={}) {
+const {height, width, background, items, message, money} = props
+  return (
+    <div
+      style={{
+        height: height,
+        width: width,
+        background: background,
+        items: items,
+      }}
+      className="square"
+    >
+      <h2 style={{ marginTop: "20px", textAlign: "center" }}>{message}</h2>
+      <h3 style={{ marginTop: "20px", textAlign: "center" }}>{money}</h3>
+
+      <ul style={{ marginTop: "20px", textAlign: "left", position:"relative", right:"-15%" }}>
+        {items.map((element, index) => (
+          <li key={index}>
+            {element.isAvailable ? "✅" : "❌"}
+            {element.value}
+          </li>
+        ))}
+      </ul>
+      <button
+        style={{
+          marginTop: "20px",
+          padding: "10px 20px",
+          border: "none",
+          borderRadius: "5px",
+          backgroundColor: "black",
+          color: "white",
+          cursor: "pointer",
+          right: "-25%",
+          position: "relative" 
+        }}
+      >
+        BUTTON
+      </button>
+    </div>
+  );
+  
+}
+
+Price.propTypes = {
+  
+  height: PropTypes.number,
+  width: PropTypes.number,
+  message: PropTypes.string,
+  background: PropTypes.string,
+  items: PropTypes.array,
+  money: PropTypes.string
+  
+}
+
+
